@@ -17,7 +17,7 @@ function getPosition() {
 	$('#time').val("Getting data...");
 
 	//instruct location service to get position with appropriate callbacks
-	navigator.geolocation.getCurrentPosition(successPosition, failPosition);
+	navigator.geolocation.watchPosition(successPosition, failPosition);
 }
 
 
@@ -37,9 +37,9 @@ function successPosition(position) {
 
 
 	//OK. Now we want to update the display with the correct values
-	$('#time').val( time);
+	$('#time').val( date);
 	$('#lattext').val(latitude);
-	$('#timestamp').val(unixtime);
+
 
 }
 
