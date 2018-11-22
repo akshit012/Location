@@ -33,8 +33,8 @@ function successPosition(position) {
 	var latitude = position.coords.latitude;
 
 	//OK. Now we want to update the display with the correct values
-	$('#time').val("Recieved data at " + time);
-	$('#lattext').val("I should contain the latitude data...");
+	$('#time').val(time);
+	$('#lattext').val(latitude);
 
 }
 
